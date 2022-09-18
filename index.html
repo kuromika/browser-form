@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browser Form</title>
-    <script src="script.js"></script>
+    <script src="script.js" type="module" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
                 <label for="country">
                     <span>Select your country:  </span>
                     <select name="country" id="country">
-                        <option value="default" selected>...</option>
+                        <option value="default" selected> . . . </option>
                     </select> 
                     <span class="error" aria-live="polite"></span>
                 </label>
@@ -30,7 +30,7 @@
             <p>
                 <label for="zip">
                     <span>Enter your Zip Code: </span>
-                    <input type="number" id="zip" name="zip">
+                    <input type="text" id="zip" name="zip">
                     <span class="error" aria-live="polite"></span>
                 </label>
             </p>
@@ -48,6 +48,7 @@
                     <span class="error" aria-live="polite"></span>
                 </label>
             </p>
+            <button>Submit</button>
         </form>
     </main>
 </body>
