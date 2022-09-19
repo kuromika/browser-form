@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    padding: 200px;
+    border: 1px solid red;
+}
+
+form{
+    display: flex;
+        flex-direction: column;
+        gap: 10px;
+}
+
+p *{
+    display: block;
+}
+
+input, select{
+    width: 100%;
+}
+
+input.invalid {
+    border-color: #900;
+    background-color: #fdd;
+}
+
+input:focus.invalid,
+input.focus.valid {
+    outline: none;
+}
+
+input.valid{
+    border-color: green;
+    background-color: #cdf2bd;  
+}
+
+.error {
+    width: 100%;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+}
+
+
+.error.active{
+    padding: 0.3em;
+}
