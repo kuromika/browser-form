@@ -17,7 +17,15 @@ const FormElement = (selector, listener, errorText, regex, length) => {
           
     });
 
-    return { element };
+    function getValue() {
+        return element.value;
+    }
+
+    function getElement() {
+        return element;
+    }
+
+    return { getElement, getValue };
 }
 
 export default FormElement;
